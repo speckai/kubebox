@@ -269,7 +269,7 @@ class Kubebox:
         self,
         pod_name: str,
         namespace: str = "default",
-        image: str = "lukejagg/sandbox:latest",
+        image: str = "speckai/sandbox:latest",
         username: str = None,
         ports: list[int] = None,
         kubebox_public_key_secret_name: str = None,

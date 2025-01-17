@@ -1,0 +1,18 @@
+[project]
+name = "k8s-sandbox"
+version = "0.1.0"
+description = "A sandbox for running code in a Kubernetes cluster."
+authors = [{ name = "speck", email = "founders@speck.sh" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi[standard]>=0.115.2",
+  "uvicorn[standard]>=0.31.1",
+  "python-socketio>=5.11.4",
+  "kubebox==0.0.15",
+  "loguru>=0.7.2",
+  "playwright>=1.48.0",
+]
+
+[project.optional-dependencies]
+dev = ["kubernetes>=30.0.0"]
