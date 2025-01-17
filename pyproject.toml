@@ -1,0 +1,17 @@
+[project]
+name = "kubebox"
+version = "0.3.5"
+description = "K8s sandboxes for LLM agents"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+  "kubernetes>=30.0.0",
+  "fastapi-socketio>=0.0.10",
+  "aiohttp>=3.10.0",
+  "cryptography>=43.0.1",
+]
+
+
+[tool.setuptools]
+packages = ["kubebox"]
